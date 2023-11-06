@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../src/fonts/Roboto/Roboto-Regular.ttf");
+    font-display: swap;
+}
+html{
+    height: 100%;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #331F6B;
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.visually-hidden {
+    display: none;
+}
+.page-header {
+    position: fixed;
+    width: 100%;
+    color: #510094;
+    background-color: #ffffff;
+}
+.navigation {
+    display: flex;
+    margin: 0 auto;
+}
+.logo-header {
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.nav-link {
+    font-size: 20px;
+    color: #510094;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-list {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.nav-item {
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.usage-main {
+    background-color: #f0f0f0;
+    min-height: 100%;
+    flex-grow: 1;
+}
+.usage-title {
+    font-size: 40px;
+    padding-top: 100px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+.usage-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.usage-container {
+    background-color: #ffffff;
+    width: 550px;
+    height: 550px;
+    margin-bottom: 5%;
+}
+.usage-container-left {
+    margin-left: 10%;
+    background-image: url("../src/Usage-diagnose-icon1.png");
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: center;
+}
+.usage-container-right {
+    margin-right: 10%;
+    background-image: url("../src/gis-icon1.png");
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position: center;
+}
+.usage-container-title {
+    font-size: 28px;
+    padding-left: 15%;
+    margin-top: 10%;
+}
+.usage-container-text {
+    width: 70%;
+    padding-left: 100px;
+}
+.usage-container-icon {
+    width: 40px;
+    height: 40px;
+}
+.usage-container-helper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.page-footer {
+    background-color: #331F6B;
+    color: #ffffff;
+    display: flex;
+}
+.footer-contacts {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.logo-footer {
+    margin-right: 10%;
+    /* margin-top: 4em; */
+    align-self: center;
+}
+.footer-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}

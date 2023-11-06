@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../src/fonts/Roboto/Roboto-Regular.ttf");
+    font-display: swap;
+}
+html{
+    height: 100%;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #331F6B;
+    background-color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.visually-hidden {
+    display: none;
+}
+.page-header {
+    position: fixed;
+    width: 100%;
+    color: #510094;
+    background-color: #ffffff;
+}
+.navigation {
+    display: flex;
+    margin: 0 auto;
+}
+.logo-header {
+    margin-left: 10%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.nav-link {
+    font-size: 20px;
+    color: #510094;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-list {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.nav-item {
+    list-style-type: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.main-container {
+    flex-grow: 1;
+}
+.introduction {
+    color: #ffffff;
+    background-color: #B1AED6;
+    background-image: url("../src/dron-final.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 800px; 
+    /* решить тут надо, как высоту сделать */
+}
+.intro-info {
+    padding-top: 10em;
+    margin-left: 10%;
+}
+.intro-header {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-size: 70px;
+    font-weight: 100;
+}
+.intro-text {
+    width: 35%;
+    font-size: 24px;
+    line-height: 36px;
+}
+.mail-link {
+    display: flex;
+}
+.mail-icon {
+    width: 30px;
+    height: 30px;
+}
+.intro-link {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.about {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+}
+.about-info {
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 45%;
+    margin-bottom: 50px;
+}
+.about-header {
+    font-size: 48px;
+    font-weight: 200;
+}
+.about-text {
+    font-size: 20px;
+}
+.about-text-s {
+    font-size: 16px;
+}
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.advantages-item {
+    list-style: none;
+    display: flex;
+}
+.adv-image {
+    height: 70px;
+    width: 80px;
+    align-self: center;    
+    margin-right: 50px;
+}
+.advantages-title {
+    font-size: 28px;
+    font-weight: 200;
+    margin: 0%;
+    margin-top: 10px;
+}
+.advantages-description {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.about-image {
+    width: 700px;
+    height: 820px;
+    align-self: center;
+    flex-grow: 1;
+}
+.sch-image {
+    width: 90%;
+    align-self: center;
+    flex-grow: 1;
+}
+.page-footer {
+    background-color: #331F6B;
+    color: #ffffff;
+    display: flex;
+}
+.footer-contacts {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.logo-footer {
+    margin-right: 10%;
+    /* margin-top: 4em; */
+    align-self: center;
+}
+.footer-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
