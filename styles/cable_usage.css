@@ -31,6 +31,7 @@ body {
 .navigation {
     display: flex;
     margin: 0 auto;
+    border-bottom: 1px solid #510094;
 }
 .logo-header {
     margin-left: 10%;
