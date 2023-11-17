@@ -77,21 +77,21 @@ body {
 .usage-container {
     background-color: #ffffff;
     width: 550px;
-    height: 550px;
+    height: 450px;
     margin-bottom: 5%;
 }
 .usage-container-left {
     margin-left: 10%;
     background-image: url("../src/Usage-diagnose-icon1.png");
     background-repeat: no-repeat;
-    background-size: 80% 80%;
+    background-size: 50% 60%;
     background-position: center;
 }
 .usage-container-right {
     margin-right: 10%;
     background-image: url("../src/gis-icon1.png");
     background-repeat: no-repeat;
-    background-size: 80% 80%;
+    background-size: 50% 60%;
     background-position: center;
 }
 .usage-container-title {
@@ -103,6 +103,9 @@ body {
     width: 70%;
     padding-left: 100px;
 }
+.usage-container-list {
+    margin-bottom: 10px;
+}
 .usage-container-icon {
     width: 40px;
     height: 40px;
@@ -112,6 +115,66 @@ body {
     flex-direction: row;
     align-items: center;
 }
+.usage-gallery {
+    /* position: relative;
+    width: 500px; */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.usage-gallery-dyagnosis {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    /* background-color: #ffffff; */
+    width: 550px;
+    height: 350px;
+}
+.usage-gallery-gis {
+    display: flex;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    /* background-color: #ffffff; */
+    width: 550px;
+    height: 350px;
+}
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+/* .prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+} */
 .page-footer {
     background-color: #331F6B;
     color: #ffffff;
