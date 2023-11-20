@@ -179,7 +179,7 @@ img {
     width: 100%;
     height: auto;
 }
-/* Стили для модального окна */
+
 .modal {
     display: none;
     position: fixed;
@@ -195,7 +195,7 @@ img {
     height: 100%;
     position: relative;
   }
-  /* Стили для контейнера галереи */
+ 
   .gallery {
     display: flex;
     flex-wrap: nowrap;
@@ -204,7 +204,6 @@ img {
     margin-bottom: 5%;
   }
   
-  /* Стили для изображений в галерее */
   .modal-trigger {
     width: 70px;
     height: 50px;
@@ -216,8 +215,7 @@ img {
   .modal-trigger:hover {
     transform: scale(1.1);
   }
-  
-  /* Стили для изображения в модальном окне */
+ 
   .modal-content {
     display: block;
     position: absolute;
@@ -230,8 +228,6 @@ img {
     max-height: 90%;
   }
   
-  /* Стили для кнопок переключения */
-  .prev,
   .next {
     position: absolute;
     top: 50%;
@@ -249,26 +245,7 @@ img {
   .next {
     right: 10px;
   }
-/* .prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  color: white;
-}
 
-.prev-button {
-  left: 10px;
-}
-
-.next-button {
-  right: 10px;
-} */
 .page-footer {
     background-color: #331F6B;
     color: #ffffff;
