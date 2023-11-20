@@ -10,7 +10,7 @@
     <body> 
         <header class="page-header">
             <nav class="navigation">
-                <a href="#" class="logo-header">
+                <a href="cable_main.html" class="logo-header">
                     <img src="./src/HLThermo-hd.svg" alt="Логотип CableFlyer">
                 </a>
                 <ul class="nav-list">
@@ -86,12 +86,16 @@
                     </ul>
                 </div>
                 <img class="about-image" src="./src/2.1.png" alt="Фотография Канатолёта">
-                <!-- <img class="about-image" src="./src/2.2.png" alt="Фотография Канатолёта"> -->
             </section>
             <section class="sch-section">
-                <img class="sch-image" src="./src/3.png" alt="схема">
-                <img class="sch-image" src="./src/4.png" alt="схема">
+                <img class="sch-image modal-trigger" src="./src/sch1.png" alt="схема" onclick="openModal('./src/sch1.png')">               
+                <img class="sch-image modal-trigger" src="./src/sch2.png" alt="схема" onclick="openModal('./src/sch2.png')">
+                <div id="modal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" src="./src/3.png" id="modal-image">
+                </div> 
             </section>
+            <script src="script_main.js"></script>
         </main>
         <footer class="page-footer">
             <section class="footer-contacts">

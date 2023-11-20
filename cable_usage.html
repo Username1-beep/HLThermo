@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Направления применения</title>
-    <link rel="stylesheet" href="./styles/cable_usage.css">
     <link type="image/x-icon" href="./src/drone.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="./src/drone.ico" rel="icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/cable_usage.css">
   </head>
   <body>
     <header class="page-header">
         <nav class="navigation">
-            <a href="#" class="logo-header">
+            <a href="cable_main.html" class="logo-header">
                 <img src="./src/HLThermo-hd.svg" alt="Логотип CableFlyer">
             </a>
             <ul class="nav-list">
@@ -48,26 +49,88 @@
                 
             </section>
         </section>
-        <section class="usage-gallery">
-            <section class="usage-gallery-dyagnosis slider-container">
-                <div class="slider">
-                    <div class="slide"><img src="./src/slider-diagnosis1.png" alt="Image 1"></div>
-                    <div class="slide"><img src="./src/slider-diagnosis2.png" alt="Image 2"></div>
-                    <div class="slide"><img src="./src/slider-diagnosis3.png" alt="Image 3"></div>
-                    <div class="slide"><img src="./src/slider-diagnosis4.png" alt="Image 4"></div>
-                    <div class="slide"><img src="./src/slider-diagnosis5.png" alt="Image 5"></div>
+        <div class="carouselki">
+            <div class=" my-carousel">
+                <div id="carouselDiagnosis" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./src/1.png" alt="Первый слайд">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./src/2.png" alt="Второй слайд">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./src/3.png" alt="Третий слайд">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./src/4.png" alt="Четвертый слайд">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./src/5.png" alt="Пятый слайд">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselDiagnosis" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselDiagnosis" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+            <div class=" my-carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./src/gis1.png" alt="Первый слайд">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./src/gis2.png" alt="Второй слайд">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./src/gis3.png" alt="Третий слайд">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./src/gis4.png" alt="Четвертый слайд">
+                      </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
-                <!-- <button class="prev-button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
-                <button class="next-button" aria-label="Посмотреть следующий слайд">&gt</button> -->
-            </section>
-            <section class="usage-gallery-gis slider-container">
-                <div class="slider">
-                    <div class="slide"><img src="./src/slider-gis1.png" alt="Image 1"></div>
-                    <div class="slide"><img src="./src/slider-gis2.png" alt="Image 2"></div>
-                    <div class="slide"><img src="./src/slider-gis3.png" alt="Image 3"></div>
-                    <div class="slide"><img src="./src/slider-gis4.png" alt="Image 4"></div>
-                </div>
-            </section>
+            </div>
+        </div>
+        <section class="previews">
+            <div class="gallery">
+                <img src="./src/1.png" class="modal-trigger" data-index="1">
+                <img src="./src/2.png" class="modal-trigger" data-index="2">
+                <img src="./src/3.png" class="modal-trigger" data-index="3">
+                <img src="./src/4.png" class="modal-trigger" data-index="4">
+                <img src="./src/5.png" class="modal-trigger" data-index="5">
+              </div>                  
+              <div id="modal" class="modal">
+                <img class="modal-content" id="modal-image">
+                <span class="prev" onclick="prevImage()">&#10094;</span>
+                <span class="next" onclick="nextImage()">&#10095;</span>
+              </div>
+              <div class="gallery">
+                <img src="./src/6.png" class="modal-trigger" data-index="6">
+                <img src="./src/7.png" class="modal-trigger" data-index="7">
+                <img src="./src/8.png" class="modal-trigger" data-index="8">
+                <img src="./src/9.png" class="modal-trigger" data-index="9">
+              </div>                  
+              <div id="modal" class="modal">
+                <div class="modal-wraper">
+                    <img class="modal-content" id="modal-image">
+                    <span class="prev" onclick="prevImage()">&#10094;</span>
+                    <span class="next" onclick="nextImage()">&#10095;</span></div>
+              </div>
         </section>
         <script src="script.js"></script>
     </main>
@@ -81,5 +144,8 @@
                 <img src="./src/fond-footer1.png" alt="Логотип CableFlyer">
             </a>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

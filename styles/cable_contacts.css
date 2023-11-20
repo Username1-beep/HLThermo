@@ -80,7 +80,13 @@ body {
 }
 .contacts-first-line {
     margin-top: 0%;
+    font-size: 30px;
 }
+a[href^="mailto:"] {
+    font-size: 24px;
+    text-decoration: none;
+    color: #331F6B;
+  }
 .contacts-map {
     margin-right: 10%;
 }
