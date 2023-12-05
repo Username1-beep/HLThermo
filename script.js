@@ -12,6 +12,19 @@
       modal.style.display = "block";
     });
   });
+
+
+  const caruselTriggers = document.querySelectorAll(".carousel-item");
+  caruselTriggers.forEach(trigger => {
+    trigger.addEventListener("click", () => {
+      if (trigger.className === 'carousel-item active'){
+        const currentImage = trigger.children[0];
+        currentImageIndex = parseInt(currentImage.getAttribute("data-index"));
+        updateModalImage();
+        modal.style.display = "block";
+      }
+    });
+  });
   
   function closeModal() {
     modal.style.display = "none";
