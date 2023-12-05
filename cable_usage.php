@@ -11,18 +11,18 @@
   <body>
     <header class="page-header">
         <nav class="navigation">
-            <a href="cable_main.html" class="logo-header">
+            <a href="index.php" class="logo-header">
                 <img src="./src/HLThermo-hd.svg" alt="Логотип CableFlyer">
             </a>
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a class="nav-link" href="cable_main.html">Главная</a>
+                    <a class="nav-link" href="index.php">Главная</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Направления применения</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="cable_contacts.html">Контакты</a>
+                    <a class="nav-link" href="cable_contacts.php">Контакты</a>
                 </li>
             </ul>
         </nav>

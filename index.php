@@ -10,7 +10,7 @@
     <body> 
         <header class="page-header">
             <nav class="navigation">
-                <a href="cable_main.html" class="logo-header">
+                <a href="index.php" class="logo-header">
                     <img src="./src/HLThermo-hd.svg" alt="Логотип CableFlyer">
                 </a>
                 <ul class="nav-list">
@@ -18,10 +18,10 @@
                         <a class="nav-link" href="#">Главная</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cable_usage.html">Направления применения</a>
+                        <a class="nav-link" href="cable_usage.php">Направления применения</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="cable_contacts.html">Контакты</a>
+                        <a class="nav-link" href="cable_contacts.php">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -37,7 +37,7 @@
                     </p>
                     <div class="mail-link">
                         <img class="mail-icon" src="./src/mail.svg" alt="Письмо иконка">
-                        <a class="intro-link" href="cable_contacts.html">Связь с нами</a>
+                        <a class="intro-link" href="cable_contacts.php">Связь с нами</a>
                     </div>
                 </div>
             </section>
