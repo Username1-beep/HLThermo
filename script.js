@@ -31,17 +31,25 @@
   }
   
   function prevImage() {
-    if (currentImageIndex > 1) {
-      currentImageIndex--;
+      if (currentImageIndex === 1){
+        currentImageIndex = 5
+      } else if (currentImageIndex === 6){
+        currentImageIndex = 9
+      } else {
+        currentImageIndex--;
+      }
       updateModalImage();
-    }
   }
   
   function nextImage() {
-    if (currentImageIndex < totalImages) {
-      currentImageIndex++;
+      if (currentImageIndex === 5){
+        currentImageIndex = 1
+      } else if (currentImageIndex === 9){
+        currentImageIndex = 6
+      } else {
+        currentImageIndex++;
+      }
       updateModalImage();
-    }
   }
   
   function updateModalImage() {
