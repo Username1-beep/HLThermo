@@ -1,4 +1,3 @@
-
   let currentImageIndex = 1;
   const totalImages = 9;
   
@@ -42,3 +41,10 @@
   });
 
   
+  
+  
+  
+
+
+
+

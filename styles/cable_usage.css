@@ -157,6 +157,10 @@ body {
     width: 550px;
     height: 350px;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(70%);
+}
 .previews {
     display: flex;
     justify-content: space-between;
@@ -190,33 +194,33 @@ img {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
-  }
-  .modal-wraper {
+}
+.modal-wraper {
     height: 100%;
     position: relative;
-  }
+}
  
-  .gallery {
+.gallery {
     display: flex;
     flex-wrap: nowrap;
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 5%;
-  }
+}
   
-  .modal-trigger {
+.modal-trigger {
     width: 70px;
     height: 50px;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-  }
+}
   
-  .modal-trigger:hover {
+.modal-trigger:hover {
     transform: scale(1.1);
-  }
+}
  
-  .modal-content {
+.modal-content {
     display: block;
     position: absolute;
     margin: auto;
@@ -226,9 +230,9 @@ img {
     right: 0;
     max-width: 50%;
     max-height: 90%;
-  }
-  
-  .next {
+}
+.prev,  
+.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -236,16 +240,15 @@ img {
     font-size: 30px;
     color: #fff;
     user-select: none;
-  }
+}
   
-  .prev {
+.prev {
     left: 10px;
-  }
+}
   
-  .next {
+.next {
     right: 10px;
-  }
-
+}
 .page-footer {
     background-color: #331F6B;
     color: #ffffff;
